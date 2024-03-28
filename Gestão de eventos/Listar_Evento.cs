@@ -3,7 +3,7 @@
     public static class Listar_Evento
     {
 
-        public static void Listar()             //Função para listar os eventos
+        public static void ListarEventoPorPeriodo()             //Função para listar os eventos por periodo 
         {
             if (Cadastro.i == 0)                //Caso não tenha cadastrado um evento
             {

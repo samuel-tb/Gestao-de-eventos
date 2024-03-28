@@ -35,7 +35,7 @@
 
                         case 2:                                                             //Caso a opção for 2
 
-                            Listar_Evento.Listar();                                         //Puxa a função de listar por período
+                            Listar_Evento.ListarEventoPorPeriodo();                         //Puxa a função de listar por período
                             break;
 
                         case 3:                                                             //Caso a opção for 3
