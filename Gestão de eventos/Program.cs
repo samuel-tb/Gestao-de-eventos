@@ -28,57 +28,57 @@
 
                     switch (opcao)                                                          //Armazena o valor da opção
                     {
-                        case 1:                                                             //Caso a opção for 1
+                        case 1:                                                             
 
                             Cadastro.Cadastrar();                                           //Puxa a função de Cadastro
                             break;
 
-                        case 2:                                                             //Caso a opção for 2
+                        case 2:                                                             
 
-                            Listar_Evento.Listar();                                         //Puxa a função de listar por período
+                            Listar_Evento.ListarEventoPorPeriodo();                         //Puxa a função de listar por período
                             break;
 
-                        case 3:                                                             //Caso a opção for 3
+                        case 3:                                                             
 
                             Listar_Data_Especifica.ListarPorDataEspecifica();               //Puxa a função de listar por data especifica
                             break;
 
-                        case 4:                                                             //Caso a opção for 4
+                        case 4:                                                             
 
                             Editar.EditarUmEvento();                                        //Puxa a função de editar um evento
                             break;
 
-                        case 5:                                                             //Caso a opção for 5
+                        case 5:                                                             
 
                             Buscar_Por_Contato.BuscaContato();                              //Puxa a função de buscar contato
                             break;
 
-                        case 6:                                                             //Caso a opção for 6
+                        case 6:                                                            
 
                             Excluir.ExcluirEventoPorId();                                   //Puxa a função de excluir um evento
                             break;
 
-                        case 7:                                                             //Caso a opção for 7
+                        case 7:                                                             
 
                             Exportacao.DadosDeEvento();                                     //Puxa a função de exportação de dados
                             break;
 
-                        case 8:                                                             //Caso a opção for 8
+                        case 8:                                                             
 
-                            Console.Clear();                                                //Limpa tudo escrito antes
+                            Console.Clear();                                               
                             Console.WriteLine("Encerrando sistema...");
                             Console.WriteLine("\nPressione qualquer tecla para encerrar.");
                             Console.ReadKey();                                                                                     
-                            Console.Clear();                                                //Limpa tudo escrito antes                                                                                      
+                            Console.Clear();                                                                                                                                      
                             break;
 
                         default:                                                            //Caso não for nenhum opção
 
-                            Console.Clear();                                                //Limpa tudo escrito antes
+                            Console.Clear();                                                
                             Console.WriteLine("Essa opção não existe.");                     
                             Console.WriteLine("\nPressione qualquer tecla para voltar ao menu de opções");          
                             Console.ReadKey();                                                             
-                            Console.Clear();                                                //Limpa tudo escrito antes    
+                            Console.Clear();                                                   
                             break;
                     }
 
@@ -88,7 +88,7 @@
             catch (Exception ex)                                                             // Verifica o código possui algum erro 
 
             {
-                Console.Clear();                                                            //Limpa tudo escrito antes 
+                Console.Clear();                                                             
                 Console.WriteLine($"Ocorreu um erro: {ex.Message}");                        //Escreve qual erro ocorreu
                 Console.WriteLine("\nPressione qualquer tecla para voltar ao menu de opções");
                 Console.ReadKey();

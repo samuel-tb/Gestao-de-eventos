@@ -3,11 +3,11 @@
     public static class Listar_Evento
     {
 
-        public static void Listar()             //Função para listar os eventos
+        public static void ListarEventoPorPeriodo()             //Função para listar os eventos por periodo 
         {
             if (Cadastro.i == 0)                //Caso não tenha cadastrado um evento
             {
-                Console.Clear();                //Limpa tudo escrito antes
+                Console.Clear();                
                 Console.WriteLine("O cadastro dos eventos ainda não foi feito.");
                 Console.WriteLine("Volte depois de cadastrar algum evento.");
             }
@@ -16,15 +16,15 @@
             {
                 try                                         //Confere se o código possui algum erro
                 {
-                    Console.Clear();            //Limpa tudo escrito antes
+                    Console.Clear();            
                     Console.WriteLine("Veja quais eventos vão acontecer entre os periodos informados:\n");
                     Console.Write("Digite a data inicial (ex:dd/MM/yyyy): ");
                     DateTime Data_Inicial = DateTime.Parse(Console.ReadLine()!);     //Converte a data inicial digitada para date time
                     Console.Write("Digite a data final (ex:dd/MM/yyyy): ");
                     DateTime Data_Final = DateTime.Parse(Console.ReadLine()!);       //Converte a data final digitada para date time   
                     Console.Clear();
-                    bool Fora_do_Intervalo = false;    // Atribuido valor falso
-                    bool Dentro_do_Intervalo = false; // Atribuido valor falso          
+                    bool Fora_do_Intervalo = false;    
+                    bool Dentro_do_Intervalo = false;           
                 
                     for(int i= 0; i < Cadastro.quant; i++){    //Estrutura de repetição para listar todos as datas cadastradas
                         
@@ -44,14 +44,14 @@
                             Console.WriteLine($"Telefone de contato - {Evento.telefone[i]}");
                             Console.WriteLine($"E-mail de contato - {Evento.email[i]}");
                             Console.WriteLine("=========================================================\n");
-                            Dentro_do_Intervalo = true;// Atribuido valor verdadeiro
+                            Dentro_do_Intervalo = true;
 
                         }       
 
                         else //Se nenhuma data registrada for entre as datas informadas irá executar
 
                         {
-                            Fora_do_Intervalo = true; // Atribuido valor verdadeiro
+                            Fora_do_Intervalo = true; 
                         }
                     }
 
@@ -76,14 +76,14 @@
                 catch (Exception ex)  //Verifica se o codigo tem algum erro
 
                 {
-                    Console.Clear();   //Limpa tudo escrito antes
+                    Console.Clear();   
                     Console.WriteLine($"Ocorreu um erro: {ex.Message}");        //Informa qual erro ocorreu 
 
                 }
             }
             Console.WriteLine("\nPressione qualquer tecla para voltar ao menu de opções");
             Console.ReadKey();
-            Console.Clear();                            //Limpa tudo escrito antes
+            Console.Clear();                            
         }
 
     }

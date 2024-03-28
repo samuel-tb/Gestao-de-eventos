@@ -10,7 +10,7 @@ namespace Gestão_de_eventos
        
         public static void Cadastrar()                              //Função para cadastrar os eventos
         {
-            Console.Clear();                                        //Limpa tudo escrito antes
+            Console.Clear();                                        
 
             if (i == 0)                                             //Caso não tenha cadastrado 
             {
@@ -54,9 +54,9 @@ namespace Gestão_de_eventos
                         Evento.email[i] = Console.ReadLine()!;                          //Recebe o valor de e-mail de contato
 
                         ID.GeradorDeId();
-                        Console.WriteLine($"\nO ID correspondente ao evento {Evento.titulo[i]} é: {ID.id[i]}");     //Informa o ID 
-                        Console.WriteLine("====================================================================");  //correspondente ao
-                        Console.WriteLine("");                                                                      //evento informado
+                        Console.WriteLine($"\nO ID correspondente ao evento {Evento.titulo[i]} é: {ID.id[i]}");     //Informa o ID correspondente ao evento informado
+                        Console.WriteLine("====================================================================");  
+                        Console.WriteLine("");                                                                      
 
                     }
                     Console.WriteLine("Cadastro Concluido.");
@@ -65,7 +65,7 @@ namespace Gestão_de_eventos
                 catch (Exception ex)                                    //Verifica se o código possui algum erro 
 
                 {
-                    Console.Clear();                                    //Limpa tudo escrito antes
+                    Console.Clear();                                    
                     Console.WriteLine($"Ocorreu um erro: {ex.Message}");    //Escreve qual erro ocorreu
                     Console.WriteLine("\nFaça o cadastro novamente.");
                     i = 0;                                                  //Retorna o valor de i para começar o cadastro de novo
@@ -80,7 +80,7 @@ namespace Gestão_de_eventos
             }
             Console.WriteLine("\nPressione qualquer tecla para voltar ao menu de opções.");
             Console.ReadKey();                                                             
-            Console.Clear();                                            //Limpa tudo escrito antes
+            Console.Clear();                                            
         }
 
 

@@ -8,7 +8,7 @@
             if (Cadastro.i == 0)         //Se não efetuou o cadastro dos eventos
             {
 
-                Console.Clear();                        //Limpa tudo escrito antes
+                Console.Clear();                        
                 Console.WriteLine("O cadastro dos eventos ainda não foi feito.");
                 Console.WriteLine("Volte depois de cadastrar algum evento.");
             }
@@ -17,12 +17,12 @@
             {
                 try
                 {
-                    Console.Clear();                          //Limpa tudo escrito antes
+                    Console.Clear();                         
                     Console.Write("Digite a data do evento que deseja buscar: ");
                     DateTime data_desejada = DateTime.Parse(Console.ReadLine()!);//Variável para receber o valor da data que deseja buscar
-                    Console.Clear();                                            //Limpa tudo escrito antes
-                    bool sem_data = false;   // Atribuido valor falso
-                    bool com_data = false;   // Atribuido valor falso
+                    Console.Clear();                                           
+                    bool sem_data = false;   
+                    bool com_data = false;   
 
                     for (int i = 0; i < Cadastro.quant; i++)       //Estrutura de repetição para listar o evento por data especifica
                         
@@ -43,14 +43,14 @@
                             Console.WriteLine($"Telefone de contato - {Evento.telefone[i]}");
                             Console.WriteLine($"E-mail de contato - {Evento.email[i]}");
                             Console.WriteLine("=========================================================\n");
-                            com_data = true;  // Atribuido valor verdadeiro
+                            com_data = true;  
 
                         }
 
                         else if (!data_desejada.Equals(Evento.data[i]))         //Se a data digitada é diferente da data existente
 
                         {
-                            sem_data = true;  // Atribuido valor verdadeiro
+                            sem_data = true; 
                         }
                     }
 
@@ -75,14 +75,14 @@
                 catch (Exception ex) //Verifica se o codigo tem algum erro
 
                 {
-                    Console.Clear();                                     //Limpa tudo escrito antes
+                    Console.Clear();                                     
                     Console.WriteLine($"Ocorreu um erro: {ex.Message}");//Escreve qual erro ocorreu
                 }
 
             }
             Console.WriteLine("\nPressione qualquer tecla para voltar ao menu de opções");
             Console.ReadKey();
-            Console.Clear();                                                //Limpa tudo escrito antes
+            Console.Clear();                                                
 
         }  
     }

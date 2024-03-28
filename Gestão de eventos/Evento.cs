@@ -1,7 +1,7 @@
 ﻿namespace Gestão_de_eventos
 {
     
-    public static class Evento                  //Clase para declarar as variáveis do evento
+    public static class Evento                  //Classe para declarar as variáveis do evento
     {
         public static string[] titulo = new string[999];            //Variável que recebe o valor do título do evento
         public static DateTime[] data = new DateTime[999];          //Variável que recebe o valor da data do evento

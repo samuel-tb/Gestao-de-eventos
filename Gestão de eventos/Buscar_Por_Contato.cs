@@ -16,12 +16,12 @@
             {
                 try                                 //Confere se o código possui algum erro
                 {
-                    Console.Clear();                //Limpa tudo escrito antes
+                    Console.Clear();                
                     Console.Write("Digite o nome do contato que deseja buscar: ");
                     string contato_desejado = Console.ReadLine()!;
-                    Console.Clear();                //Limpa tudo escrito antes
-                    bool sem_contato = false; // Atribuido valor falso
-                    bool com_contato = false;// Atribuido valor falso
+                    Console.Clear();                
+                    bool sem_contato = false; 
+                    bool com_contato = false;
 
                     for (int i = 0; i < Cadastro.quant; i++)   //Estrutura de repetição para exibir o evento de acordo com o contato digitado
 
@@ -43,7 +43,7 @@
                             Console.WriteLine($"Telefone de contato - {Evento.telefone[i]}");
                             Console.WriteLine($"E-mail de contato - {Evento.email[i]}");
                             Console.WriteLine("=========================================================\n");
-                            com_contato = true; // Atribuido valor verdadeiro
+                            com_contato = true; 
 
                         }
 
@@ -75,14 +75,14 @@
                 catch (Exception ex)            //Se tiver algum erro no código
 
                 {
-                    Console.Clear();            //Limpa tudo escrito antes
+                    Console.Clear();            
                     Console.WriteLine($"Ocorreu um erro: {ex.Message}");
                 }
 
             }
             Console.WriteLine("\nPressione qualquer tecla para voltar ao menu de opções");
             Console.ReadKey();
-            Console.Clear();                    //Limpa tudo escrito antes
+            Console.Clear();                    
 
         }
     }
