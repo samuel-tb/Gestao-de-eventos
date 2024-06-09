@@ -64,13 +64,7 @@
 
                     else if (sem_data == false && com_data == true) { }     // Se todos os eventos tiverem a mesma data irá executar
 
-                    else if (Cadastro.quant == 0)               //Se não houver eventos cadastrados
-
-                    {
-                        Console.WriteLine("A data do evento não foi encontrada.");
-                    }
-
-                }
+                   }
 
                 catch (Exception ex) //Verifica se o codigo tem algum erro
 
